@@ -1,0 +1,142 @@
+/*Código armado por La Foca Loca S.A. No modificar*/
+
+body {
+    /*font-family: Arial, sans-serif;*/
+    font-family: 'Concert One', cursive;
+    width: 940px;
+    margin: 5% auto;
+    min-height: 100%;
+    background-image: url(../images/adventure.jpg);
+}
+
+ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+li {
+    padding: 5px 0;
+    animation: fadein 5s;
+    width: 180px;
+}
+
+li::before {
+    content: "• ";
+    color: #E84A5F;
+    /* color: #EC6778;*/
+}
+
+.col-40 h1 {
+    font-size: 20px;
+    color: #E84A5F;
+}
+
+.col-40,
+.col-60 {
+    display: table-cell;
+    margin: 0;
+    vertical-align: top;
+}
+
+.col-40 {
+    background: #fcf5b0;
+    padding: 30px;
+    color: #000;
+    border: 1px solid black;
+}
+
+.col-60 {
+    background: #E84A5F;
+}
+
+#flecha {
+    font-size: 60px;
+}
+
+.texto-centrado {
+    text-align: center;
+}
+
+#juego div {
+    text-align: center;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+/* Aca van los que hago yo*/
+
+#juego {
+    width: 600px;
+    height: 600px;
+}
+
+.piezaJuego img {
+    height: 198px;
+    width: 198px;
+    border: 1px solid black;
+    float: left;
+}
+
+#objetivo img {
+    width: 180px;
+    height: 180px;
+    border: 1px solid black;
+}
+
+#ultimo-mov h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #E84A5F;
+}
+
+
+/* Estilo al cartel ganador */
+
+#cartel_ganador {
+    background-image: url("../images/cartel-ganador.jpg");
+    background-size: cover;
+    border: 1px solid white;
+    position: absolute;
+    text-align: center;
+    border-radius: 20px;
+    background-color: grey;
+    width: 500px;
+    height: 300px;
+    font-size: 20px;
+    clear: both;
+    margin: 150px 0px 0px 50px;
+    padding: 1% 1% 4% 1%;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+#cartel_ganador p {
+    width: 65%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    background-color: #E84A5F;
+    opacity: .90;
+}
+
+#boton_ganador {
+    font-family: 'Concert One', cursive;
+    background-color: skyblue;
+    font-size: 20px;
+    width: 200px;
+    height: 30px;
+    clear: both;
+    margin: 60px auto;
+    border-radius: 10px;
+    text-align: center;
+}
